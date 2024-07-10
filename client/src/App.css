@@ -1,14 +1,5 @@
 @import url("./variables.css");
 
-#root {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2em;
-}
-
 /*Main Screen*/
 .screen {
   width: 390px;
