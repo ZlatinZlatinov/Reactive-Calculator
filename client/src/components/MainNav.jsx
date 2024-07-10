@@ -1,7 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownLeftAndUpRightToCenter } from "@fortawesome/free-solid-svg-icons"
+
 export default function MainNav() {
     return (
         <section className="nav">
-            <p className="arrows"><i className="fa-solid fa-down-left-and-up-right-to-center"></i></p>
+            <p className="arrows"><FontAwesomeIcon icon={faDownLeftAndUpRightToCenter} /></p>
 
             <ul className="nav-links">
                 <li><a href="#">Калкулатор</a></li>
