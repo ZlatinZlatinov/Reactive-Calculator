@@ -115,9 +115,9 @@
 /*Menu Buttons*/
 .menu-buttons {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   font-size: 2em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   color: var(--abbey);
 }
