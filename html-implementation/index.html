@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="srtyle.css">
+    <title>My Calculator</title>
+</head>
+
+<body>
+    <div class="screen">
+        <!--Time And Battery-->
+        <section class="time">
+            <p class="clock"><span>15:08</span></p>
+            <p class="battery"><i class="fa-solid fa-battery-empty"></i></p>
+        </section> 
+
+        <!--Nav-->
+        <section class="nav">
+            <p class="arrows"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></p> 
+
+            <ul class="nav-links">
+                <li><a href="#">Калкулатор</a></li>
+                <li><a href="#">Конвертор</a></li>
+            </ul> 
+
+            <p class="dots">&#8942;</p>
+        </section> 
+
+        <!--Section Container-->
+        <div class="section-container">
+            <section class="output">
+                <input type="text" class="initial-input" placeholder="0">
+                <input type="text" class="result" placeholder="=">
+            </section>
+
+            <!--Section Buttons-->
+            <section class="buttons-container">
+                <button class="btn orange-text">AC</button>
+                <button class="btn orange-text"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn orange-text">%</button>
+                <button class="btn orange-text">/</button>
+    
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn orange-text">x</button>
+    
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn orange-text">+</button>
+    
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn orange-text">-</button>
+    
+                <button class="btn orange-text"><i class="fa-solid fa-arrows-rotate"></i></button>
+                <button class="btn">0</button>
+                <button class="btn">,</button>
+                <button class="btn btn-orange-fill">=</button>
+            </section>
+        </div>
+        
+        <section class="menu-buttons">
+            <p><i class="fa-solid fa-square"></i></p>
+            <p><i class="fa-regular fa-circle-dot"></i></p>
+            <p><i class="fa-solid fa-caret-left"></i></p>
+        </section>
+    </div>
+</body>
+
+</html>
