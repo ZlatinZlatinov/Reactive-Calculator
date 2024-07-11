@@ -7,11 +7,11 @@ Just another calculator made with React.js
 3. cd client npm run dev
 
 ## Images: 
-1.Original view from my phone: 
+###1.Original view from my phone: 
 ![Original](https://github.com/ZlatinZlatinov/Reactive-Calculator/blob/main/design/original.jpg "Calculator image supposed to be here") 
 
-2. Figma Design: 
+###2. Figma Design: 
 ![Figma](https://github.com/ZlatinZlatinov/Reactive-Calculator/blob/main/design/Figma-Design-1.png "Calculator image supposed to be here")
 
-4. Actual Result: 
+###3. Actual Result: 
 ![Actual](https://github.com/ZlatinZlatinov/Reactive-Calculator/blob/main/design/html-result.png "Calculator image supposed to be here")
