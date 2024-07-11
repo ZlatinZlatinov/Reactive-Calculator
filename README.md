@@ -1,4 +1,5 @@
-#Reactive Calculator 
+# Reactive Calculator 
+
 Just another calculator made with React.js 
 
 ## Installation: 
