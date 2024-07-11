@@ -109,7 +109,7 @@ export const buttonsArray = [
     },
     {
         id: 19,
-        value: ",",
+        value: ".",
         className: "btn",
         iTag: ""
     },

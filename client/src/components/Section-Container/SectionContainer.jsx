@@ -14,7 +14,7 @@ export default function SectionContainer() {
                 setOutput("=");
                 return;
             case "":
-                setResult(old => old.slice(0, old.length - 1));
+                setResult(old => String(old).slice(0, -1));
                 return;
             case '=':
                 setResult(old => eval(old));
