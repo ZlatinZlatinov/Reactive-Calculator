@@ -4,13 +4,17 @@ import { faDeleteLeft, faArrowsRotate } from "@fortawesome/free-solid-svg-icons"
 export default function SingleButton({
     className,
     value,
-    iTag
+    iTag,
+    updateResult
 }) {
     return (
-        <button className={className}>{value ? value :
+        <button
+            className={className}
+            onClick={() => updateResult(value)}
+        >{value ? value :
             <FontAwesomeIcon icon={
                 iTag == "faDeleteLeft" ? faDeleteLeft : faArrowsRotate
             } />
-        }</button>
+            }</button>
     );
 }

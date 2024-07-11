@@ -43,7 +43,7 @@ export const buttonsArray = [
     },
     {
         id: 8,
-        value: "x",
+        value: "*",
         className: "btn orange-text",
         iTag: ""
     },
