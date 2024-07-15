@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function Output({ curr, output }) {
     const [inputValue, setInputValue] = useState(curr);
-    const [outputValue, setOutputValue] = useState(output);
 
     return (
         <section className="output">
