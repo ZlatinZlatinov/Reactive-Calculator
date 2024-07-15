@@ -1,0 +1,27 @@
+#converter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    align-self: center;
+}
+
+.converter-card a {
+    padding-top: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8em;
+    color: #808080;
+}
+
+.converter-card a i {
+    font-size: 2em;
+}
+
+.converter-card a span {
+    font-size: 1.5em;
+}
