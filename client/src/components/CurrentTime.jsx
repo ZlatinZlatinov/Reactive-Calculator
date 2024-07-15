@@ -11,6 +11,11 @@ export default function CurrentTime() {
     }, []);
 
     return (
-        <p className="clock"><span>{`${currentTime.getHours()}:${currentTime.getMinutes()}`}</span></p>
+        <p className="clock">
+            <span>
+                {`${currentTime.getHours()}:`
+                    + `${currentTime.getMinutes() < 10 ? "0" + currentTime.getMinutes() : currentTime.getMinutes()}`}
+            </span>
+        </p>
     );
 }
