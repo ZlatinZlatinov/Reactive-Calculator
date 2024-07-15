@@ -17,9 +17,12 @@ export default function SectionContainer() {
                 setResult(old => String(old).slice(0, -1));
                 return;
             case '=':
-                setResult(old => eval(old));
-                setOutput("=" + eval(result));
-                return;
+                try {
+                    setResult(old => eval(old));
+                    setOutput("=" + eval(result));
+                } catch (err) {
+                    window.alert("Wrong input!");
+                }
             case '%':
                 setResult(old => old / 100);
                 return;
