@@ -1,3 +1,4 @@
+import { ResultContext } from "../../Contexts/ResultContext";
 import Output from "./Output";
 import SectionButtons from "./SectionButtons";
 
@@ -26,20 +27,22 @@ export default function SectionContainer() {
                 setCurrentResult(eval(currentResult));
                 setOutput("=" + eval(currentResult));
             } catch (err) {
-                window.alert("Wrong input!");
+                setOutput("Wrong Input!");
             }
 
         } else if (value === "%") {
-            setCurrentResult(Number(currentResult) /100);
+            setCurrentResult(Number(currentResult) / 100);
         }
     }
     return (
         <div className="section-container">
-            {/*<!--Output-->*/}
-            <Output curr={currentResult} output={output} />
+            <ResultContext.Provider value={{ updateResult, currentResult, output }}>
+                {/*<!--Output-->*/}
+                <Output />
 
-            {/* <!--Section Buttons--> */}
-            <SectionButtons updateResult={updateResult} />
+                {/* <!--Section Buttons--> */}
+                <SectionButtons />
+            </ResultContext.Provider>
         </div>
     );
 }

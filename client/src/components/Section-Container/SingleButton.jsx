@@ -1,12 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeleteLeft, faArrowsRotate } from "@fortawesome/free-solid-svg-icons"
+import { useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDeleteLeft, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+import { ResultContext } from '../../Contexts/ResultContext';
 
 export default function SingleButton({
     className,
     value,
-    iTag,
-    updateResult
+    iTag
 }) {
+    const { updateResult } = useContext(ResultContext);
+
     return (
         <button
             className={className}

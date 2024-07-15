@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react"; 
+import {ResultContext} from "../../Contexts/ResultContext"
 
-export default function Output({ curr, output }) {
-    const [inputValue, setInputValue] = useState(curr);
+export default function Output() {
+    const {currentResult, output} = useContext(ResultContext);
+    const [inputValue, setInputValue] = useState(currentResult);
 
     return (
         <section className="output">
             <input type="text"
                 className="initial-input"
                 placeholder="0"
-                onChange={(e) => setInputValue(curr)}
-                value={curr} />
+                onChange={(e) => setInputValue(currentResult)}
+                value={currentResult} />
 
             <input type="text"
                 className="result"

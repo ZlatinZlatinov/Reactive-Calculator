@@ -1,7 +1,7 @@
 import { buttonsArray } from "./buttonsArray";
 import SingleButton from "./SingleButton";
 
-export default function SectionButtons({updateResult}) {
+export default function SectionButtons() {
     return (
         <section className="buttons-container">
             {buttonsArray.map((btn) => {
@@ -11,7 +11,6 @@ export default function SectionButtons({updateResult}) {
                         className={btn.className}
                         value={btn.value}
                         iTag={btn.iTag}
-                        updateResult={updateResult}
                         >
                     </SingleButton>);
             })}
