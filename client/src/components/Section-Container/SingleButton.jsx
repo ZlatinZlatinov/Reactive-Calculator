@@ -13,11 +13,11 @@ export default function SingleButton({
     return (
         <button
             className={className}
-            onClick={() => updateResult(value)}
-        >{value ? value :
-            <FontAwesomeIcon icon={
-                iTag == "faDeleteLeft" ? faDeleteLeft : faArrowsRotate
-            } />
-            }</button>
+            onClick={() => updateResult(value)}>
+            {value ? value :
+                <FontAwesomeIcon icon={
+                    iTag == "faDeleteLeft" ? faDeleteLeft : faArrowsRotate
+                } />}
+        </button>
     );
 }
