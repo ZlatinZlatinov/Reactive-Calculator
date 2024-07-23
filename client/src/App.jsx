@@ -20,10 +20,10 @@ function App() {
         {/* <!--Section Container--> */}
         <Route path={'/'} element={<SectionContainer />} />
 
-        <Route path={'calculator'} element={<SectionContainer />} />
+        <Route path={'/calculator'} element={<SectionContainer />} />
 
         {/* Section Convertor */}
-        <Route path='convertor' element={<Convertor />} />
+        <Route path={'/convertor'} element={<Convertor />} />
       </Routes>
       {/* <!--Menu buttons--> */}
       <MenuButoons />
