@@ -1,6 +1,15 @@
+import { iconsArray } from './iconsArray';
+import './convertor.css';
+import { CovnvertorCard } from './ConvertorCard';
+
 export const Convertor = function () {
 
     return (
-        <h2>This is convertor Page</h2>
+        <section id="converter">
+            {iconsArray.map(i => <CovnvertorCard
+                key={i.id}
+                icon={i.icon}
+                textContent={i.textContet} />)}
+        </section>
     );
 }
