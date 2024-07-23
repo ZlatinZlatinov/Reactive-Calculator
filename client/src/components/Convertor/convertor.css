@@ -18,10 +18,10 @@
     color: #808080;
 }
 
-.converter-card a i {
-    font-size: 3em;
+.converter-card a svg {
+    font-size: 1.8em;
 }
 
 .converter-card a span {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
